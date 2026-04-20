@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Crucial: Padding stays INSIDE the width */
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-width: 100%; /* Prevents any element from pushing wider */
+    overflow-x: hidden; /* This is your safety net */
+    background: rgb(30, 30, 30);
+}
+
+#root {
+    width: 100%;
+}

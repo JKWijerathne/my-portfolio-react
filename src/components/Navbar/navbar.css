@@ -1,0 +1,61 @@
+.navbar {
+    background: rgb(18, 18, 18);
+    height: 5rem;
+    width: 100%; /* Changed from 100vw to 100% */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10%; 
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 800; /* Extra bold for the logo */
+    color: #ffcc00;
+    cursor: pointer;
+}
+
+.desktopMenu {
+    display: flex;
+    align-items: center;
+}
+
+.desktopMenuListItem {
+    color: white;
+    margin: 0 1.5rem; /* Neatly spaced */
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: 600; /* Make letters bold as requested */
+    transition: all 0.3s ease;
+    letter-spacing: 0.5px;
+}
+
+.desktopMenuListItem:hover {
+    color: #ffcc00;
+}
+
+/* Update Active State (When scrolling) */
+.desktopMenuListItem.active {
+    color: #ffcc00;
+    border-bottom: 2px solid #ffcc00;
+    padding-bottom: 0.5rem;
+}
+
+/* Hide mobile icon for now on desktop */
+.mobMenuIcon {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .desktopMenu {
+        display: none;
+    }
+    .mobMenuIcon {
+        display: block;
+        color: white;
+        font-size: 2rem;
+    }
+}
