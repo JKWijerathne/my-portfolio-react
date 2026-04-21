@@ -10,7 +10,7 @@ html, body {
     width: 100%;
     max-width: 100%; /* Prevents any element from pushing wider */
     overflow-x: hidden; /* This is your safety net */
-    background: rgb(30, 30, 30);
+    background: rgb(14, 0, 0);
 }
 
 #root {
