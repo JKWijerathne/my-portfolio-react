@@ -1,0 +1,134 @@
+.educationSection {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #000000; /* Match home background or alternate */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 6rem 10%;
+    color: white;
+}
+
+.educationContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    width: 100%;
+    max-width: 900px;
+    margin-top: 2rem;
+}
+
+.educationCard {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    padding: 2.5rem;
+    gap: 2.5rem;
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.educationCard:hover {
+    transform: translateY(-5px);
+    border-color: rgba(255, 204, 0, 0.3);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.eduLogoContainer {
+    flex-shrink: 0;
+    width: 120px;
+    height: 120px;
+    border-radius: 16px;
+    background-color: white;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
+}
+
+.eduLogo {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 12px;
+}
+
+.eduDetails {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.eduTitle {
+    font-size: 1.6rem;
+    color: #ffffff;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.eduInstitution {
+    font-size: 1.2rem;
+    color: #ffcc00;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.eduDuration {
+    display: inline-block;
+    font-size: 0.9rem;
+    color: #a0a0a0;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    margin-bottom: 1.2rem;
+    width: fit-content;
+}
+
+.eduHighlights {
+    margin-bottom: 1rem;
+}
+
+.eduGrade {
+    font-size: 1.05rem;
+    color: #ffffff;
+    font-weight: 600;
+    border-left: 3px solid #ffcc00;
+    padding-left: 10px;
+}
+
+.eduDesc {
+    font-size: 0.95rem;
+    color: #a0a0a0;
+    line-height: 1.6;
+    margin-top: 0.5rem;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .educationCard {
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem 1.5rem;
+        gap: 1.5rem;
+    }
+
+    .eduLogoContainer {
+        width: 100px;
+        height: 100px;
+    }
+
+    .eduDuration {
+        margin: 0 auto 1.2rem auto;
+    }
+
+    .eduGrade {
+        border-left: none;
+        border-bottom: 2px solid #ffcc00;
+        padding-left: 0;
+        padding-bottom: 5px;
+        display: inline-block;
+    }
+}
