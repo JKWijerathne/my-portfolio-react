@@ -3,6 +3,7 @@ import Home from './components/Home/Home';
 import Skills from './components/Skills/Skills';
 import Education from './components/Education/Education';
 import Blogs from './components/Blogs/Blogs';
+import Contact from './components/Contact/Contact';
 
 function App() {
   return (
@@ -13,8 +14,9 @@ function App() {
       <section id="projects" style={{height: '100vh'}}>Projects Section</section>
       <Blogs />
       <Education />
-      <section id="contact" style={{height: '100vh'}}>Contact Section</section>
+      <Contact />
     </div>
+
 
 
 
