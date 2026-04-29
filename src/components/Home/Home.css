@@ -3,12 +3,13 @@
     /* Adjust for navbar height */
     min-height: 600px;
     width: 100%;
-    background-color: #000000;
+    background-color: var(--bg-color-alt);
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 10%;
-    color: white;
+    color: var(--text-primary);
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .homeContent {
@@ -23,8 +24,9 @@
 .decorativeLine {
     width: 575px;
     height: 1px;
-    background-color: #555;
+    background-color: var(--text-secondary);
     margin: 20px 0;
+    opacity: 0.5;
 }
 
 .homeHeader {
@@ -32,13 +34,13 @@
     font-weight: 800;
     line-height: 1.1;
     letter-spacing: -1px;
-    color: #ffffff;
+    color: var(--text-primary);
     margin: 0;
 }
 
 .homeBio {
     font-size: 1rem;
-    color: #a0a0a0;
+    color: var(--text-secondary);
     line-height: 1.6;
     margin-bottom: 40px;
     max-width: 80%;
@@ -53,7 +55,7 @@
 .btn {
     background: transparent;
     border: none;
-    color: white;
+    color: var(--text-primary);
     cursor: pointer;
     font-size: 1rem;
     font-weight: 600;
@@ -66,7 +68,7 @@
 }
 
 .btn:hover {
-    color: #ffcc00;
+    color: var(--accent-color);
     transform: translateY(-2px);
 }
 
@@ -100,11 +102,11 @@
 .homeImageContainer::after {
     content: '';
     position: absolute;
-    bottom: 0;
+    bottom: -2px;
     left: 0;
     width: 100%;
-    height: 40%;
-    background: linear-gradient(to top, #000000 0%, transparent 100%);
+    height: 50%;
+    background: linear-gradient(to top, var(--bg-color-alt) 10%, transparent 100%);
     pointer-events: none;
     z-index: 10;
 }
@@ -116,8 +118,8 @@
     object-position: center right;
     mask-image: linear-gradient(to right, transparent, black 20%);
     -webkit-mask-image: linear-gradient(to right, transparent, black 20%);
-    filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.15));
-    transform: scale(1.4);
+    filter: drop-shadow(0 0 25px var(--image-shadow));
+    transform: scale(1.55);
     transform-origin: center right;
 }
 

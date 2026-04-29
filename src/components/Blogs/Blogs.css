@@ -1,12 +1,13 @@
 .blogsSection {
     min-height: 100vh;
     width: 100%;
-    background-color: #050505; /* Slightly offset from black to match Skills */
+    background-color: var(--bg-color); /* Slightly offset from black to match Skills */
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 6rem 10%;
-    color: white;
+    color: var(--text-primary);
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .blogsContainer {
@@ -19,24 +20,24 @@
 }
 
 .blogCard {
-    background: rgba(255, 255, 255, 0.03);
-    border: 1px solid rgba(255, 255, 255, 0.05);
+    background: var(--card-bg);
+    border: 1px solid rgba(255, 255, 255, 0.05); /* Optional variable for subtle border */
     border-radius: 12px;
     padding: 2rem;
     text-decoration: none;
-    color: white;
+    color: var(--text-primary);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
     min-height: 200px;
 }
 
 .blogCard:hover {
     transform: translateY(-5px);
-    border-color: rgba(255, 204, 0, 0.3);
-    background: rgba(255, 255, 255, 0.05);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    border-color: var(--border-color);
+    background: var(--card-hover-bg);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
 .blogImageWrapper {
@@ -45,7 +46,7 @@
     margin-bottom: 1.5rem;
     border-radius: 8px;
     overflow: hidden;
-    background: rgba(255, 255, 255, 0.02);
+    background: var(--card-bg);
 }
 
 .blogImage {
@@ -69,7 +70,7 @@
 
 .readArticleText {
     font-size: 0.95rem;
-    color: #ffcc00;
+    color: var(--accent-color);
     font-weight: 600;
     display: flex;
     align-items: center;
@@ -83,8 +84,8 @@
 
 .readMoreBtn {
     background: transparent;
-    border: 2px solid #ffcc00;
-    color: #ffcc00;
+    border: 2px solid var(--accent-color);
+    color: var(--accent-color);
     padding: 12px 30px;
     font-size: 1.1rem;
     font-weight: 600;
@@ -94,9 +95,9 @@
 }
 
 .readMoreBtn:hover {
-    background: #ffcc00;
-    color: #000000;
-    box-shadow: 0 0 20px rgba(255, 204, 0, 0.4);
+    background: var(--accent-color);
+    color: var(--bg-color-alt);
+    box-shadow: 0 0 20px var(--border-color);
 }
 
 /* Responsive */

@@ -1,20 +1,22 @@
 .navbar {
-    background: rgb(18, 18, 18);
+    background: var(--nav-bg);
     height: 5rem;
     width: 100%; /* Changed from 100vw to 100% */
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 10%; 
-    position: sticky;
+    position: fixed;
     top: 0;
-    z-index: 10;
+    left: 0;
+    z-index: 100;
+    transition: background 0.3s ease;
 }
 
 .logo {
     font-size: 1.8rem;
     font-weight: 800; /* Extra bold for the logo */
-    color: #ffcc00;
+    color: var(--accent-color);
     cursor: pointer;
 }
 
@@ -26,7 +28,7 @@
 }
 
 .desktopMenuListItem {
-    color: white;
+    color: var(--text-primary);
     margin: 0 1.5rem; /* Neatly spaced */
     cursor: pointer;
     font-size: 1.1rem;
@@ -36,14 +38,35 @@
 }
 
 .desktopMenuListItem:hover {
-    color: #ffcc00;
+    color: var(--accent-color);
 }
 
 /* Update Active State (When scrolling) */
 .desktopMenuListItem.active {
-    color: #ffcc00;
-    border-bottom: 2px solid #ffcc00;
+    color: var(--accent-color);
+    border-bottom: 2px solid var(--accent-color);
     padding-bottom: 0.5rem;
+}
+
+.rightMenu {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.themeToggle {
+    font-size: 1.5rem;
+    cursor: pointer;
+    user-select: none;
+    transition: transform 0.2s ease;
+    display: flex;
+    align-items: center;
+    color: var(--text-primary);
+}
+
+.themeToggle:hover {
+    transform: scale(1.1);
+    color: var(--accent-color);
 }
 
 /* Hide mobile icon for now on desktop */
@@ -57,7 +80,7 @@
     }
     .mobMenuIcon {
         display: block;
-        color: white;
+        color: var(--text-primary);
         font-size: 2rem;
     }
 }
@@ -67,14 +90,15 @@
     top: 5rem;
     left: 0;
     width: 100%;
-    background: rgb(18, 18, 18);
+    background: var(--nav-bg);
     flex-direction: column;
     align-items: center;
     padding: 1rem 0;
+    transition: background 0.3s ease;
 }
 
 .listItem {
-    color: white;
+    color: var(--text-primary);
     padding: 1rem;
     cursor: pointer;
     font-size: 1.1rem;
@@ -85,6 +109,11 @@
 }
 
 .listItem:hover {
-    background: #333;
-    color: #ffcc00;
+    background: var(--card-hover-bg);
+    color: var(--accent-color);
+}
+
+.themeToggleMobile {
+    margin-top: 0.5rem;
+    border-top: 1px solid var(--border-color);
 }

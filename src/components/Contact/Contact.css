@@ -1,12 +1,13 @@
 .contactSection {
     min-height: 100vh;
     width: 100%;
-    background-color: #000000;
+    background-color: var(--bg-color-alt);
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 6rem 10%;
-    color: white;
+    color: var(--text-primary);
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .contactContainer {
@@ -21,11 +22,12 @@
 /* Left Side: Form */
 .contactFormWrapper {
     flex: 1;
-    background: rgba(255, 255, 255, 0.03);
-    border: 1px solid rgba(255, 255, 255, 0.05);
+    background: var(--card-bg);
+    border: 1px solid rgba(255, 255, 255, 0.05); /* Consider subtle border variable */
     border-radius: 16px;
     padding: 2.5rem;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease, box-shadow 0.3s ease;
 }
 
 .contactForm {
@@ -40,20 +42,20 @@
 
 .contactInput {
     width: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: var(--card-hover-bg);
+    border: 1px solid var(--border-color);
     border-radius: 8px;
     padding: 1rem 1.2rem;
-    color: white;
+    color: var(--text-primary);
     font-size: 1rem;
-    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease, background 0.3s ease, color 0.3s ease;
     font-family: inherit;
 }
 
 .contactInput:focus {
     outline: none;
-    border-color: #ffcc00;
-    box-shadow: 0 0 10px rgba(255, 204, 0, 0.2);
+    border-color: var(--accent-color);
+    box-shadow: 0 0 10px rgba(255, 204, 0, 0.1);
 }
 
 .contactTextarea {
@@ -62,8 +64,8 @@
 
 .submitBtn {
     background: transparent;
-    border: 2px solid #ffcc00;
-    color: #ffcc00;
+    border: 2px solid var(--accent-color);
+    color: var(--accent-color);
     padding: 12px 30px;
     font-size: 1.1rem;
     font-weight: 600;
@@ -75,9 +77,9 @@
 }
 
 .submitBtn:hover {
-    background: #ffcc00;
-    color: #000000;
-    box-shadow: 0 0 20px rgba(255, 204, 0, 0.4);
+    background: var(--accent-color);
+    color: var(--bg-color-alt);
+    box-shadow: 0 0 20px var(--border-color);
     transform: translateY(-2px);
 }
 
@@ -91,14 +93,14 @@
 
 .contactInfoTitle {
     font-size: 2rem;
-    color: #ffffff;
+    color: var(--text-primary);
     font-weight: 700;
     margin-bottom: 1rem;
 }
 
 .contactInfoDesc {
     font-size: 1rem;
-    color: #a0a0a0;
+    color: var(--text-secondary);
     line-height: 1.6;
     margin-bottom: 3rem;
 }
@@ -114,7 +116,7 @@
     align-items: center;
     gap: 1.2rem;
     text-decoration: none;
-    color: #a0a0a0;
+    color: var(--text-secondary);
     transition: color 0.3s ease, transform 0.3s ease;
 }
 
@@ -122,12 +124,12 @@
     width: 50px;
     height: 50px;
     border-radius: 12px;
-    background: rgba(255, 255, 255, 0.05);
+    background: var(--card-bg);
     border: 1px solid rgba(255, 255, 255, 0.1);
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #ffcc00;
+    color: var(--accent-color);
     transition: all 0.3s ease;
 }
 
@@ -143,25 +145,25 @@
 
 .socialSubtitle {
     font-size: 0.85rem;
-    color: #888;
+    color: #888; /* Perhaps a more muted variable if we have one */
     margin-top: 0.2rem;
     transition: color 0.3s ease;
 }
 
 .socialItem:hover {
-    color: #ffffff;
+    color: var(--text-primary);
     transform: translateX(10px);
 }
 
 .socialItem:hover .socialSubtitle {
-    color: #ccc;
+    color: var(--text-secondary);
 }
 
 .socialItem:hover .socialIcon {
-    background: #ffcc00;
-    color: #000000;
-    border-color: #ffcc00;
-    box-shadow: 0 0 15px rgba(255, 204, 0, 0.3);
+    background: var(--accent-color);
+    color: var(--bg-color-alt);
+    border-color: var(--accent-color);
+    box-shadow: 0 0 15px var(--border-color);
 }
 
 /* Responsive */

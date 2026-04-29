@@ -1,12 +1,13 @@
 .projectsSection {
     min-height: 100vh;
     width: 100%;
-    background-color: #000000;
+    background-color: var(--bg-color-alt);
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 6rem 10%;
-    color: white;
+    color: var(--text-primary);
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .projectsContainer {
@@ -16,19 +17,19 @@
 }
 
 .projectCard {
-    background: rgba(255, 255, 255, 0.03);
-    border: 1px solid rgba(255, 255, 255, 0.05);
+    background: var(--card-bg);
+    border: 1px solid rgba(255, 255, 255, 0.05); /* Consider variable for subtle border */
     border-radius: 12px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
 }
 
 .projectCard:hover {
     transform: translateY(-5px);
-    border-color: rgba(255, 204, 0, 0.3);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    border-color: var(--border-color);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
 @media (min-width: 768px) {
@@ -40,7 +41,7 @@
 .projectImageWrapper {
     width: 100%;
     height: 250px;
-    background: rgba(255, 255, 255, 0.02);
+    background: var(--card-bg);
     overflow: hidden;
 }
 
@@ -73,14 +74,14 @@
 .projectTitle {
     font-size: 1.5rem;
     font-weight: 600;
-    color: #ffcc00;
+    color: var(--accent-color);
     margin-bottom: 1rem;
 }
 
 .projectDescription {
     font-size: 1rem;
     line-height: 1.6;
-    color: #cccccc;
+    color: var(--text-secondary);
     margin-bottom: 1.5rem;
     flex: 1;
 }
@@ -93,8 +94,8 @@
 }
 
 .techTag {
-    background: rgba(255, 204, 0, 0.1);
-    color: #ffcc00;
+    background: rgba(255, 204, 0, 0.1); /* Consider an accent-color related variable */
+    color: var(--accent-color);
     padding: 5px 12px;
     border-radius: 20px;
     font-size: 0.85rem;
@@ -104,8 +105,8 @@
 .githubLink {
     align-self: flex-start;
     background: transparent;
-    border: 2px solid #ffcc00;
-    color: #ffcc00;
+    border: 2px solid var(--accent-color);
+    color: var(--accent-color);
     padding: 10px 24px;
     font-size: 1rem;
     font-weight: 600;
@@ -115,7 +116,7 @@
 }
 
 .githubLink:hover {
-    background: #ffcc00;
-    color: #000000;
-    box-shadow: 0 0 20px rgba(255, 204, 0, 0.4);
+    background: var(--accent-color);
+    color: var(--bg-color-alt);
+    box-shadow: 0 0 20px var(--border-color);
 }
