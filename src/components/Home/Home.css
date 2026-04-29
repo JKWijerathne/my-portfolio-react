@@ -98,7 +98,7 @@
     justify-content: flex-end;
     align-items: center;
     position: relative;
-    overflow: hidden;
+    overflow: visible;
 }
 
 .homeImageContainer::after {
@@ -107,8 +107,8 @@
     bottom: -2px;
     left: 0;
     width: 100%;
-    height: 50%;
-    background: linear-gradient(to top, var(--bg-color-alt) 10%, transparent 100%);
+    height: 60%;
+    background: linear-gradient(to top, var(--bg-color-alt) 20%, transparent 100%);
     pointer-events: none;
     z-index: 10;
 }
@@ -118,10 +118,10 @@
     max-width: 100%;
     object-fit: contain;
     object-position: center right;
-    mask-image: linear-gradient(to right, transparent, black 20%);
-    -webkit-mask-image: linear-gradient(to right, transparent, black 20%);
-    filter: drop-shadow(0 0 25px var(--image-shadow));
-    transform: scale(1.55);
+    mask-image: linear-gradient(to right, transparent, black 15%);
+    -webkit-mask-image: linear-gradient(to right, transparent, black 15%);
+    filter: drop-shadow(0 30px 40px var(--image-shadow));
+    transform: scale(1.08) translateX(2%) translateY(-5%);
     transform-origin: center right;
 }
 
@@ -148,11 +148,12 @@
         order: -1;
         width: 100%;
         justify-content: center;
-        height: 40vh;
-        min-height: 220px;
-        max-height: 340px;
-        margin-bottom: 1.5rem;
-        overflow: visible;
+        height: 55vh;
+        min-height: 300px;
+        max-height: 500px;
+        margin-bottom: 1rem;
+        overflow: hidden;
+        /* Prevent overflow into text */
     }
 
     .homeContent {
@@ -175,10 +176,13 @@
         mask-image: none;
         -webkit-mask-image: none;
         max-height: 100%;
-        max-width: 75%;
-        object-position: center;
-        transform: scale(1.1);
+        max-width: 100%;
+        object-position: center bottom;
+        transform: scale(1.2);
+        /* Slightly larger for better mobile view */
         transform-origin: center bottom;
+        filter: none;
+        /* Remove the heavy shadow on mobile to avoid duplication artifacts */
     }
 }
 

@@ -17,7 +17,7 @@
     --card-hover-bg: rgba(255, 255, 255, 0.05);
     --border-color: rgba(255, 204, 0, 0.3);
     --footer-bg: #111;
-    --image-shadow: rgba(255, 255, 255, 0.5);
+    --image-shadow: rgba(0, 0, 0, 0.8);
 }
 
 body.light-mode {
@@ -32,7 +32,7 @@ body.light-mode {
     --card-hover-bg: rgba(0, 0, 0, 0.05);
     --border-color: rgba(212, 160, 0, 0.3);
     --footer-bg: #e0e0e0;
-    --image-shadow: rgba(0, 0, 0, 0.5);
+    --image-shadow: rgba(255, 255, 255, 0.9);
 }
 
 html,
