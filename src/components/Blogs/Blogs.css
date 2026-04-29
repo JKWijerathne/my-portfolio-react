@@ -102,6 +102,10 @@
 
 /* Responsive */
 @media screen and (max-width: 768px) {
+    .blogsSection {
+        padding: 4rem 5%;
+    }
+
     .blogsContainer {
         grid-template-columns: 1fr;
     }

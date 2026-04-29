@@ -168,6 +168,10 @@
 
 /* Responsive */
 @media screen and (max-width: 900px) {
+    .contactSection {
+        padding: 4rem 5%;
+    }
+
     .contactContainer {
         flex-direction: column;
         gap: 3rem;

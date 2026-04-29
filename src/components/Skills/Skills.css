@@ -117,6 +117,10 @@
 
 /* Responsive adjustments */
 @media screen and (max-width: 768px) {
+    .skillsSection {
+        padding: 4rem 5%;
+    }
+    
     .sectionTitle {
         font-size: 2.5rem;
     }

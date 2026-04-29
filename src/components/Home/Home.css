@@ -22,7 +22,7 @@
 }
 
 .decorativeLine {
-    width: 575px;
+    width: 600px;
     height: 1px;
     background-color: var(--text-secondary);
     margin: 20px 0;
@@ -31,11 +31,13 @@
 
 .homeHeader {
     font-size: 5rem;
-    font-weight: 800;
+    font-weight: 700;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     line-height: 1.1;
     letter-spacing: -1px;
     color: var(--text-primary);
     margin: 0;
+    text-align: center;
 }
 
 .homeBio {
@@ -135,14 +137,14 @@
         flex-direction: column;
         justify-content: center;
         text-align: center;
-        padding-top: 2rem;
+        padding: 2rem 5% 2rem 5%;
         height: auto;
         min-height: calc(100vh - 5rem);
     }
 
     .homeContent {
         align-items: center;
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
     }
 
     .homeBio {
@@ -152,22 +154,45 @@
     .homeImageContainer {
         width: 100%;
         justify-content: center;
+        height: 55vh;
+        min-height: 200px;
+        margin-top: 1rem;
+        overflow: visible;
     }
 
     .homeImage {
-        mask-image: linear-gradient(to top, transparent, black 20%);
-        -webkit-mask-image: linear-gradient(to top, transparent, black 20%);
-        object-position: bottom center;
+        mask-image: none;
+        -webkit-mask-image: none;
+        max-height: 100%;
+        max-width: 90%;
+        object-position: center;
+        transform: scale(1.05);
+        transform-origin: center;
     }
 }
 
 @media screen and (max-width: 480px) {
     .homeHeader {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
 
     .homeButtons {
         flex-wrap: wrap;
         justify-content: center;
+        gap: 20px;
+    }
+
+    .btn-primary {
+        width: 100%;
+    }
+
+    .homeImageContainer {
+        height: 50vh;
+        min-height: 280px;
+    }
+
+    .homeImage {
+        max-width: 85%;
+        transform: scale(1);
     }
 }
