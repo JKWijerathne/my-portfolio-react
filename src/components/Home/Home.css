@@ -135,43 +135,58 @@
 @media screen and (max-width: 768px) {
     .homeSection {
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start;
+        align-items: center;
         text-align: center;
-        padding: 2rem 5% 2rem 5%;
+        padding: 2rem 5% 3rem 5%;
         height: auto;
         min-height: calc(100vh - 5rem);
     }
 
+    /* Move image ABOVE the name/bio on mobile */
+    .homeImageContainer {
+        order: -1;
+        width: 100%;
+        justify-content: center;
+        height: 40vh;
+        min-height: 220px;
+        max-height: 340px;
+        margin-bottom: 1.5rem;
+        overflow: visible;
+    }
+
     .homeContent {
+        order: 0;
         align-items: center;
         margin-bottom: 1rem;
+        max-width: 100%;
     }
 
     .homeBio {
         max-width: 100%;
     }
 
-    .homeImageContainer {
+    .decorativeLine {
         width: 100%;
-        justify-content: center;
-        height: 55vh;
-        min-height: 200px;
-        margin-top: 1rem;
-        overflow: visible;
+        max-width: 400px;
     }
 
     .homeImage {
         mask-image: none;
         -webkit-mask-image: none;
         max-height: 100%;
-        max-width: 90%;
+        max-width: 75%;
         object-position: center;
-        transform: scale(1.05);
-        transform-origin: center;
+        transform: scale(1.1);
+        transform-origin: center bottom;
     }
 }
 
 @media screen and (max-width: 480px) {
+    .homeSection {
+        padding: 1.5rem 5% 2.5rem 5%;
+    }
+
     .homeHeader {
         font-size: 2.5rem;
     }
@@ -187,12 +202,15 @@
     }
 
     .homeImageContainer {
-        height: 50vh;
-        min-height: 280px;
+        height: 35vh;
+        min-height: 200px;
+        max-height: 280px;
+        margin-bottom: 1rem;
     }
 
     .homeImage {
-        max-width: 85%;
-        transform: scale(1);
+        max-width: 70%;
+        transform: scale(1.05);
+        transform-origin: center bottom;
     }
 }

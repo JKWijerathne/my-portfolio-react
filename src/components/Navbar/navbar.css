@@ -84,7 +84,8 @@
     .mobMenuIcon {
         display: block;
         color: var(--text-primary);
-        font-size: 2rem;
+        font-size: 1.3rem;
+        cursor: pointer;
     }
 }
 
