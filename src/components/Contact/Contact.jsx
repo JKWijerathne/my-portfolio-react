@@ -2,12 +2,6 @@ import React from 'react';
 import './Contact.css';
 
 const Contact = () => {
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Normally you'd handle form submission here (e.g. EmailJS, Formspree, custom backend)
-    alert("Message feature is simulated. Implement your backend or EmailJS to send emails!");
-  };
-
   return (
     <section id="contact" className="contactSection">
       <h2 className="sectionTitle">Get In Touch</h2>
@@ -15,18 +9,18 @@ const Contact = () => {
 
         {/* Left Side: Contact Form */}
         <div className="contactFormWrapper">
-          <form className="contactForm" onSubmit={handleSubmit}>
+          <form action="https://formsubmit.co/jkwijerathne7@gmail.com" method="POST" className="contactForm">
             <div className="inputGroup">
-              <input type="text" placeholder="Your Name" required className="contactInput" />
+              <input type="text" name="name" placeholder="Your Name" required className="contactInput" />
             </div>
             <div className="inputGroup">
-              <input type="email" placeholder="Your Email" required className="contactInput" />
+              <input type="email" name="email" placeholder="Your Email" required className="contactInput" />
             </div>
             <div className="inputGroup">
-              <input type="text" placeholder="Subject" required className="contactInput" />
+              <input type="text" name="subject" placeholder="Subject" required className="contactInput" />
             </div>
             <div className="inputGroup">
-              <textarea placeholder="Your Message" rows="5" required className="contactInput contactTextarea"></textarea>
+              <textarea name="message" placeholder="Your Message" rows="5" required className="contactInput contactTextarea"></textarea>
             </div>
             <button type="submit" className="submitBtn">Send Message</button>
           </form>
