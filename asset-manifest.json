@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/my-portfolio-react/static/css/main.1d7d55d6.css",
-    "main.js": "/my-portfolio-react/static/js/main.e958e6ec.js",
+    "main.css": "/my-portfolio-react/static/css/main.5268d6e9.css",
+    "main.js": "/my-portfolio-react/static/js/main.32c59267.js",
     "static/media/Blog 1.png": "/my-portfolio-react/static/media/Blog 1.923d910e060b1cc6b2ae.png",
     "static/media/project.png": "/my-portfolio-react/static/media/project.302ad871d91394e5dad8.png",
-    "static/media/Profile.png": "/my-portfolio-react/static/media/Profile.ae1c8faf17ba4def479c.png",
+    "static/media/Profile.png": "/my-portfolio-react/static/media/Profile.7d37ac5eb1e9422ea7e4.png",
     "static/media/Blog 4.png": "/my-portfolio-react/static/media/Blog 4.54814fc3c842a7d4eecd.png",
     "static/media/Blog 2.png": "/my-portfolio-react/static/media/Blog 2.34778a2390f70a1e695d.png",
     "static/media/School.jpg": "/my-portfolio-react/static/media/School.e5e40ae65d2e92b06a9c.jpg",
     "static/media/University.jpg": "/my-portfolio-react/static/media/University.bae19390e6cb196ac2d3.jpg",
     "index.html": "/my-portfolio-react/index.html",
-    "main.1d7d55d6.css.map": "/my-portfolio-react/static/css/main.1d7d55d6.css.map",
-    "main.e958e6ec.js.map": "/my-portfolio-react/static/js/main.e958e6ec.js.map"
+    "main.5268d6e9.css.map": "/my-portfolio-react/static/css/main.5268d6e9.css.map",
+    "main.32c59267.js.map": "/my-portfolio-react/static/js/main.32c59267.js.map"
   },
   "entrypoints": [
-    "static/css/main.1d7d55d6.css",
-    "static/js/main.e958e6ec.js"
+    "static/css/main.5268d6e9.css",
+    "static/js/main.32c59267.js"
   ]
 }
