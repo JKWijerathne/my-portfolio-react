@@ -4,6 +4,7 @@ import Skills from './components/Skills/Skills';
 import Education from './components/Education/Education';
 import Blogs from './components/Blogs/Blogs';
 import Contact from './components/Contact/Contact';
+import Projects from './components/Projects/Projects';
 
 function App() {
   return (
@@ -11,7 +12,7 @@ function App() {
       <Navbar />
       <Home />
       <Skills />
-      <section id="projects" style={{height: '100vh'}}>Projects Section</section>
+      <Projects />
       <Blogs />
       <Education />
       <Contact />

@@ -1,0 +1,121 @@
+.projectsSection {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 6rem 10%;
+    color: white;
+}
+
+.projectsContainer {
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 2rem;
+}
+
+.projectCard {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projectCard:hover {
+    transform: translateY(-5px);
+    border-color: rgba(255, 204, 0, 0.3);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+@media (min-width: 768px) {
+    .projectCard {
+        flex-direction: row;
+    }
+}
+
+.projectImageWrapper {
+    width: 100%;
+    height: 250px;
+    background: rgba(255, 255, 255, 0.02);
+    overflow: hidden;
+}
+
+@media (min-width: 768px) {
+    .projectImageWrapper {
+        width: 40%;
+        height: auto;
+        min-height: 300px;
+    }
+}
+
+.projectImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.projectCard:hover .projectImage {
+    transform: scale(1.05);
+}
+
+.projectContent {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.projectTitle {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #ffcc00;
+    margin-bottom: 1rem;
+}
+
+.projectDescription {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #cccccc;
+    margin-bottom: 1.5rem;
+    flex: 1;
+}
+
+.projectTechnologies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 1.5rem;
+}
+
+.techTag {
+    background: rgba(255, 204, 0, 0.1);
+    color: #ffcc00;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.githubLink {
+    align-self: flex-start;
+    background: transparent;
+    border: 2px solid #ffcc00;
+    color: #ffcc00;
+    padding: 10px 24px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.githubLink:hover {
+    background: #ffcc00;
+    color: #000000;
+    box-shadow: 0 0 20px rgba(255, 204, 0, 0.4);
+}
