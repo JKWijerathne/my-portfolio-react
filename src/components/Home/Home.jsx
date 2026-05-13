@@ -25,7 +25,7 @@ const Home = () => {
               <circle cx="4" cy="4" r="2"></circle>
             </svg>
           </a>
-          <a href="/cv.pdf" download className="btn btn-icon-text">
+          <a href="https://drive.google.com/file/d/1Xx2fs2881oa9gXLAoWQQL8El4pvg5RPO/view?usp=sharing" download className="btn btn-icon-text">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
               <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
               <polyline points="7 10 12 15 17 10"></polyline>
